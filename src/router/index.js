@@ -5,7 +5,7 @@ const router = createRouter({
   routes: [
     {
       path: "/",
-      redirect: "/data",
+      redirect: "/navigation",
     },
     {
       path: "/basic",
@@ -18,6 +18,10 @@ const router = createRouter({
     {
       path: "/data",
       component: () => import("../views/data/data.vue"),
+    },
+    {
+      path: "/navigation",
+      component: () => import("../views/navigation/navigation.vue"),
     },
   ],
 });
